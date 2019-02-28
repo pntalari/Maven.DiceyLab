@@ -26,14 +26,13 @@ public class Simulation {
 
     private void runSimulation() {
 
-        Dice dice = new Dice();
+        Dice dice = new Dice(4);
         Bins binTracker = new Bins(this.numberOfDices, this.numberOfTosses);
 
         for (int i = 1; i <= this.numberOfTosses; i++) {
             sumOfToss = dice.tossAndSum(this.numberOfDices);
             binSet = binTracker.binIncrement(sumOfToss);
-         
-           // binTrackMap.put(binSet.)
+          
         }
     }
 

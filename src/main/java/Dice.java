@@ -1,7 +1,23 @@
+import java.util.Random;
+
 public class Dice {
 
     private Integer numberOfDices;
     private Integer[] diceArray;
+    private Integer face;
+    private Integer maxFace;
+    private Random random;
+
+    public Dice(){
+        this.face = 1;
+        this.maxFace = 6;
+    }
+
+    public Dice(Random random){
+        this.face = 1;
+        this.maxFace = 6;
+        this.random = random;
+    }
 
     public Dice(Integer numberOfDices){
         this.numberOfDices = numberOfDices;

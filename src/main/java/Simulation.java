@@ -6,6 +6,11 @@ public class Simulation {
     private int numberOfTosses = 0;
     int sumOfToss = 0;
     Set binSet = new HashSet();
+
+    Random random = new Random();
+
+
+
     private Set<String> binTrackMap = new TreeSet<String>(binSet);
 
 
